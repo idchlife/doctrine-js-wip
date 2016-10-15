@@ -1,0 +1,3 @@
+doctrine_js_homepage:
+    path:     /
+    defaults: { _controller: DoctrineJSBundle:Default:index }

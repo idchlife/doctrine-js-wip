@@ -1,3 +1,7 @@
+doctrine_js:
+    resource: "@DoctrineJSBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
