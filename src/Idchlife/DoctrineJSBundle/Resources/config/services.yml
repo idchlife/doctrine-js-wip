@@ -1,4 +1,8 @@
 services:
-#    doctrine_js.example:
-#        class: Idchlife\DoctrineJSBundle\Example
-#        arguments: ["@service_id", "plain_value", %parameter%]
+    response_service:
+        class: Idchlife\DoctrineJSBundle\Service\ResponseService\ResponseService
+        calls:
+            - [setSerializer, ['@serializer']]
+
+    repository_service:
+        class: Idchlife\DoctrineJSBundle\Service\RepositoryService\RepositoryService
